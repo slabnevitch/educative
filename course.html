@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Курс</title>
+    <meta name="description" content="">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 header__inner">
+            <div class="header-logo"><a href="#">
+                <svg height="26px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="header-logo__img">
+                  <path d="M333 0H67A67 67 0 000 67v266a67 67 0 0067 67h266a67 67 0 0067-67V67a67 67 0 00-67-67zm29 325a37 37 0 01-37 37H75a37 37 0 01-37-37V162h324zm0-201H38V75a37 37 0 0137-37h250a37 37 0 0137 37z"></path>
+                  <rect x="68" y="63" width="38.1" height="38.1" rx="2.4"></rect>
+                  <rect x="126" y="63" width="38.1" height="38.1" rx="2.4"></rect>
+                  <rect x="184" y="63" width="38.1" height="38.1" rx="2.4"></rect>
+                  <rect x="200" y="295" width="114.3" height="38.1" rx="3.3"></rect>
+                  <path d="M109 331a3 3 0 005 0l61-68a3 3 0 001-4l-59-69a3 3 0 00-4-1l-20 17a3 3 0 00-1 5l40 47a3 3 0 010 4l-43 47a3 3 0 001 4z"></path>
+                </svg>
+                <svg height="16px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 862 141" class="header-logo__text d-none d-xss-inline">
+                  <path d="M90 62a44 44 0 00-17-17 49 49 0 00-24-6 49 49 0 00-25 7A46 46 0 006 64a53 53 0 00-6 26 53 53 0 006 26 45 45 0 0019 18q12 6 27 6a57 57 0 0022-4 39 39 0 0016-12l-12-14q-10 11-25 11-11 0-18-5a25 25 0 01-11-13l73-14q0-15-7-27zM21 89v-1q0-14 8-22t20-8a26 26 0 0126 20zm167-37a35 35 0 00-14-10 43 43 0 00-17-3 49 49 0 00-25 6 45 45 0 00-17 18q-6 12-6 27t6 26a45 45 0 0017 18 49 49 0 0025 6 44 44 0 0018-3c5-2 10-6 12-11v14h20V3h-19zm-4 54a27 27 0 01-10 11 29 29 0 01-29 0 27 27 0 01-10-11 34 34 0 01-4-16 34 34 0 014-17 27 27 0 0110-11 29 29 0 0129 0 27 27 0 0110 11 34 34 0 014 17 34 34 0 01-4 16zm112-16c0 13-4 17-8 22s-11 8-19 8q-11 0-17-7c-4-4-5-11-5-19V39h-19v58q0 21 11 32c7 8 13 11 26 11a41 41 0 0017-3 37 37 0 0014-10v13h20V39h-20zm88-32a26 26 0 0114 4 27 27 0 0110 10l16-10a38 38 0 00-15-17q-11-6-24-6a51 51 0 00-26 6 46 46 0 00-18 18 53 53 0 00-7 26 53 53 0 007 27 46 46 0 0018 18 52 52 0 0026 6 47 47 0 0023-6 39 39 0 0016-17l-16-10a27 27 0 01-10 10 26 26 0 01-14 3q-12 0-20-8t-8-23q0-14 8-22a27 27 0 0120-9zm201 63q-7 0-10-3a19 19 0 01-5-11V59h25V39h-24V20h-20v19h-15v20h15v48q0 17 8 25c6 6 13 8 23 8a41 41 0 0012-1 26 26 0 009-5l-6-17a19 19 0 01-12 4zm39-82h19v101h-19zm87 76l-29-76h-22l39 101h23l41-101h-22l-30 76zm107 6q-10 0-18-5a26 26 0 01-10-13l72-14q0-15-6-27a44 44 0 00-17-17 52 52 0 00-50 0 46 46 0 00-17 19c-4 7-8 16-8 26s4 18 8 26a46 46 0 0018 18q12 6 28 6a57 57 0 0022-4 39 39 0 0016-12l-12-14q-10 11-26 11zm-31-33q0-14 8-22t19-8a26 26 0 0127 20l-54 11zM624 0h19v19h-19zM513 47c-8-5-15-8-28-8-21 0-34 5-41 16l19 9c3-6 10-8 21-8l15 2c3 2 4 4 5 7v12h-5c-41 0-62 11-62 34a26 26 0 0011 21c6 6 15 8 25 8 13 0 23-3 32-9v9h19V76c0-14-4-24-11-29zm-8 64a30 30 0 01-11 9 37 37 0 01-16 3c-6 0-10-1-14-3a10 10 0 01-4-9c0-12 12-18 35-18h10z"></path>
+                </svg></a></div>
+            <div class="header__search"><i class="fas fa-search"></i>
+              <input type="text" placeholder="Search for a course">
+            </div>
+            <div class="header__search-toggle ripple-elem d-md-none"><i class="fas fa-search"></i><i class="fas fa-times"></i></div>
+            <ul class="header-menu">
+              <li class="d-none d-lg-flex"><a href="#">For Business</a></li>
+              <li class="d-none d-lg-flex"><a href="#">Pricing</a></li>
+              <li><a href="#">Log in</a></li>
+              <li class="header__join"><a href="#">Join for free<i class="fas fa-long-arrow-alt-right"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="course">
+      <div class="container">
+        <div class="row">
+          <div class="col course__content content-course order-2 order-lg-1">
+            <div class="content-course__header">
+              <h1>Docker for Developers</h1>
+              <div class="course__options options-course">
+                <div class="options-course__row">
+                  <div class="options-course__icon"><i class="far fa-clock"></i></div><span>Estimated completion time:<span>6h</span></span>
+                </div>
+                <div class="options-course__row">
+                  <div class="options-course__icon"><i class="fas fa-award"></i></div><span>Certificate Included</span>
+                </div>
+              </div>
+            </div>
+            <div class="course__info info-course">
+              <div class="course__author author-course">
+                <div class="author-course__by">course by:</div><a href="" class="author-course__person">
+                  <div class="author-course__userpic"><img src="img/unnamed.jpg" alt="alt"></div>
+                  <div class="author-course__name">Arnaud Weil</div></a>
+              </div>
+              <div class="course__features features-course">
+                <div class="features-course__item">
+                  <div class="features-course__val"><i class="far fa-chart-bar"></i></div>
+                  <div class="features-course__capt">Intermediate</div>
+                </div>
+                <div class="features-course__item">
+                  <div class="features-course__val">58</div>
+                  <div class="features-course__capt">Lessons</div>
+                </div>
+                <div class="features-course__item">
+                  <div class="features-course__val">8</div>
+                  <div class="features-course__capt">Quizzes</div>
+                </div>
+                <div class="features-course__item">
+                  <div class="features-course__val">31</div>
+                  <div class="features-course__capt">Playgrounds</div>
+                </div>
+                <div class="features-course__item">
+                  <div class="features-course__val">113</div>
+                  <div class="features-course__capt">Code Snippets</div>
+                </div>
+                <div class="features-course__item">
+                  <div class="features-course__val">30</div>
+                  <div class="features-course__capt">Illustrations</div>
+                </div>
+              </div>
+            </div>
+            <div class="course__overview overview-course">
+              <h2>Course Overview</h2>
+              <div class="overview-course__descr">
+                <p>By now, you've probably heard the buzz around Docker. It's fundamentally changed the development process and been adopted by software teams of all sizes, and for good reason: Docker makes it considerably easier to create, deploy, and run applications with the use of containers. Docker is here to stay, and is becoming ... <span>See more</span></p>
+              </div>
+            </div>
+            <div class="sidebar-course__block d-lg-none">
+              <div class="sidebar-course__target"><span>30% discount applied for</span>
+                <div class="sidebar-course__flag"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/ru.svg"></div>
+              </div>
+              <div class="sidebar-course__price sidebar-course__price--month">
+                <div class="sidebar-course__features">
+                  <div class="sidebar-course__feature"><i class="fas fa-check"></i><span>Unlimited access to all 200+ courses</span></div>
+                  <div class="sidebar-course__feature"><i class="fas fa-check"></i><span>Completion Certificates</span></div>
+                </div>
+                <div class="sidebar-course__price-sale"><span>$14</span><span>.55</span>
+                  <p class="sidebar-course__per">(per month)</p>
+                  <div class="sidebar-course__price-old">$39.99</div>
+                </div>
+                <button class="button">get all courses</button>
+              </div>
+              <div class="sidebar-course__or"><span>OR</span></div>
+              <div class="sidebar-course__price sidebar-course__price--year">
+                <div class="sidebar-course__features">
+                  <p>Access just this course</p>
+                </div>
+                <div class="sidebar-course__price-sale"><span>$34</span><span>.00</span>
+                  <p class="sidebar-course__per">(per year)</p>
+                </div>
+                <button class="button empty">Get This Course</button>
+              </div>
+            </div>
+            <div id="contents" class="course__contents contents-course">
+              <ul class="contents-course__nav">
+                <li class="contents-course__anchor active"><a href="#contents">Contents</a></li>
+                <li class="contents-course__anchor"><a href="#experience">Learning Experience</a></li>
+              </ul>
+              <h2>Course Contents</h2>
+              <div class="contents-course__content">
+                <div class="contents-course__item">
+                  <div class="contents-course__title">1. Before Getting Started</div>
+                  <ul>
+                    <li class="completed"><a href="#">
+                        <div class="contents-course__icon"><i class="far fa-circle"></i></div><span>Text</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="far fa-circle"></i></div><span>Introduction</span></a></li>
+                  </ul>
+                </div>
+                <div class="contents-course__item">
+                  <div class="contents-course__title">2. Why Docker?</div>
+                  <ul>
+                    <li class="completed"><a href="#">
+                        <div class="contents-course__icon"><i class="far fa-circle"></i></div><span>Text</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="far fa-circle"></i></div><span>A DevOps Enabler Tool</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="far fa-circle"></i></div><span>Solves Dependency Conflicts</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="fas fa-lock"></i></div><span>Allows Easy Scaling Up</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="fas fa-lock"></i></div><span>Allows Seamless Upgrades</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="fas fa-lock"></i></div><span>International Commerce Already Uses Containers</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="fas fa-lock"></i></div><span>Quiz</span></a></li>
+                  </ul>
+                </div>
+                <div class="contents-course__item">
+                  <div class="contents-course__title">3. Get Docker up and Running?</div>
+                  <ul>
+                    <li class="completed"><a href="#">
+                        <div class="contents-course__icon"><i class="far fa-circle"></i></div><span>Text</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="far fa-circle"></i></div><span>Various Products for Various Needs</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="fas fa-lock"></i></div><span>Community on a Developer or CI Machine</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="fas fa-lock"></i></div><span>Enterprise on a Server</span></a></li>
+                  </ul>
+                </div>
+                <div class="contents-course__item">
+                  <div class="contents-course__title">4. Basic Concepts</div>
+                  <ul>
+                    <li class="completed"><a href="#">
+                        <div class="contents-course__icon"><i class="far fa-circle"></i></div><span>Text</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="far fa-circle"></i></div><span>Basic Concepts</span></a></li>
+                    <li><a href="#">
+                        <div class="contents-course__icon"><i class="fas fa-lock"></i></div><span>Quiz</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="experience" class="course__learn learn-course">
+                <h2>How you will learn</h2>
+                <div class="row learn-course__items">
+                  <div class="learn-course__item col-12 col-xss-6">
+                    <div class="learn-course__img"><img src="img/learn/1.svg"></div>
+                    <div class="learn-course__title">Faster than videos</div>
+                    <p class="learn-course__text">Videos are holding you back. The average video tutorial is spoken at 150 words per minute, while you can read at 250. That's why our courses are text-based.</p>
+                  </div>
+                  <div class="learn-course__item col-12 col-xss-6">
+                    <div class="learn-course__img"><img src="img/learn/2.svg"></div>
+                    <div class="learn-course__title">Hands-on coding environments</div>
+                    <p class="learn-course__text">You don’t get better at swimming by watching others. Coding is no different. Practice as you learn with live code environments inside your browser.</p>
+                  </div>
+                  <div class="learn-course__item col-12 col-xss-6">
+                    <div class="learn-course__img"><img src="img/learn/3.svg"></div>
+                    <div class="learn-course__title">No set-up required</div>
+                    <p class="learn-course__text">Start learning immediately instead of fiddling with SDKs and IDEs. It‘s all on the cloud.</p>
+                  </div>
+                  <div class="learn-course__item col-12 col-xss-6">
+                    <div class="learn-course__img"><img src="img/learn/4.svg"></div>
+                    <div class="learn-course__title">Progress you can show</div>
+                    <p class="learn-course__text">Built in assessments let you test your skills. Completion certificates let you show them off.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="course__sidebar sidebar-course order-1 order-lg-2">
+            <div class="sidebar-course__img"><img src="img/6024297908797440.webp"></div>
+            <div class="sidebar-course__block">
+              <div class="sidebar-course__target"><span>30% discount applied for</span>
+                <div class="sidebar-course__flag"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/ru.svg"></div>
+              </div>
+              <div class="sidebar-course__price sidebar-course__price--month">
+                <div class="sidebar-course__features">
+                  <div class="sidebar-course__feature"><i class="fas fa-check"></i><span>Unlimited access to all 200+ courses</span></div>
+                  <div class="sidebar-course__feature"><i class="fas fa-check"></i><span>Completion Certificates</span></div>
+                </div>
+                <div class="sidebar-course__price-sale"><span>$14</span><span>.55</span>
+                  <p class="sidebar-course__per">(per month)</p>
+                  <div class="sidebar-course__price-old">$39.99</div>
+                </div>
+                <button class="button">get all courses</button>
+              </div>
+              <div class="sidebar-course__or"><span>OR</span></div>
+              <div class="sidebar-course__price sidebar-course__price--year">
+                <div class="sidebar-course__features">
+                  <p>Access just this course</p>
+                </div>
+                <div class="sidebar-course__price-sale"><span>$34</span><span>.00</span>
+                  <p class="sidebar-course__per">(per year)</p>
+                </div>
+                <button class="button empty">Get This Course</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-up"><i class="fas fa-arrow-down"></i></div>
+    <div class="cookie-alert">
+      <p>We use cookies to ensure you get the best experience on our website. Please review our <a href="">Privacy Policy</a> to learn more</p>
+      <button class="button empty">Accept</button>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer__top top-footer">
+          <div class="col-12">
+            <div class="top-footer__logo logo-footer">
+              <div class="logo-footer__row">
+                <svg height="20px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="logo-footer__img">
+                  <path d="M333 0H67A67 67 0 000 67v266a67 67 0 0067 67h266a67 67 0 0067-67V67a67 67 0 00-67-67zm29 325a37 37 0 01-37 37H75a37 37 0 01-37-37V162h324zm0-201H38V75a37 37 0 0137-37h250a37 37 0 0137 37z"></path>
+                  <rect x="68" y="63" width="38.1" height="38.1" rx="2.4"></rect>
+                  <rect x="126" y="63" width="38.1" height="38.1" rx="2.4"></rect>
+                  <rect x="184" y="63" width="38.1" height="38.1" rx="2.4"></rect>
+                  <rect x="200" y="295" width="114.3" height="38.1" rx="3.3"></rect>
+                  <path d="M109 331a3 3 0 005 0l61-68a3 3 0 001-4l-59-69a3 3 0 00-4-1l-20 17a3 3 0 00-1 5l40 47a3 3 0 010 4l-43 47a3 3 0 001 4z"></path>
+                </svg>
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 862 141" height="20" class="logo-footer__text">
+                  <path d="M90 62a44 44 0 00-17-17 49 49 0 00-24-6 49 49 0 00-25 7A46 46 0 006 64a53 53 0 00-6 26 53 53 0 006 26 45 45 0 0019 18q12 6 27 6a57 57 0 0022-4 39 39 0 0016-12l-12-14q-10 11-25 11-11 0-18-5a25 25 0 01-11-13l73-14q0-15-7-27zM21 89v-1q0-14 8-22t20-8a26 26 0 0126 20zm167-37a35 35 0 00-14-10 43 43 0 00-17-3 49 49 0 00-25 6 45 45 0 00-17 18q-6 12-6 27t6 26a45 45 0 0017 18 49 49 0 0025 6 44 44 0 0018-3c5-2 10-6 12-11v14h20V3h-19zm-4 54a27 27 0 01-10 11 29 29 0 01-29 0 27 27 0 01-10-11 34 34 0 01-4-16 34 34 0 014-17 27 27 0 0110-11 29 29 0 0129 0 27 27 0 0110 11 34 34 0 014 17 34 34 0 01-4 16zm112-16c0 13-4 17-8 22s-11 8-19 8q-11 0-17-7c-4-4-5-11-5-19V39h-19v58q0 21 11 32c7 8 13 11 26 11a41 41 0 0017-3 37 37 0 0014-10v13h20V39h-20zm88-32a26 26 0 0114 4 27 27 0 0110 10l16-10a38 38 0 00-15-17q-11-6-24-6a51 51 0 00-26 6 46 46 0 00-18 18 53 53 0 00-7 26 53 53 0 007 27 46 46 0 0018 18 52 52 0 0026 6 47 47 0 0023-6 39 39 0 0016-17l-16-10a27 27 0 01-10 10 26 26 0 01-14 3q-12 0-20-8t-8-23q0-14 8-22a27 27 0 0120-9zm201 63q-7 0-10-3a19 19 0 01-5-11V59h25V39h-24V20h-20v19h-15v20h15v48q0 17 8 25c6 6 13 8 23 8a41 41 0 0012-1 26 26 0 009-5l-6-17a19 19 0 01-12 4zm39-82h19v101h-19zm87 76l-29-76h-22l39 101h23l41-101h-22l-30 76zm107 6q-10 0-18-5a26 26 0 01-10-13l72-14q0-15-6-27a44 44 0 00-17-17 52 52 0 00-50 0 46 46 0 00-17 19c-4 7-8 16-8 26s4 18 8 26a46 46 0 0018 18q12 6 28 6a57 57 0 0022-4 39 39 0 0016-12l-12-14q-10 11-26 11zm-31-33q0-14 8-22t19-8a26 26 0 0127 20l-54 11zM624 0h19v19h-19zM513 47c-8-5-15-8-28-8-21 0-34 5-41 16l19 9c3-6 10-8 21-8l15 2c3 2 4 4 5 7v12h-5c-41 0-62 11-62 34a26 26 0 0011 21c6 6 15 8 25 8 13 0 23-3 32-9v9h19V76c0-14-4-24-11-29zm-8 64a30 30 0 01-11 9 37 37 0 01-16 3c-6 0-10-1-14-3a10 10 0 01-4-9c0-12 12-18 35-18h10z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="top-footer__descr">
+              <p>Become 2x the developer in half the time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row footer__content content-footer">
+          <div class="content-footer__column col">
+            <div class="content-footer__title">LEARN</div>
+            <ul>
+              <li><a href="#">Courses</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Early Access Courses</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Edpresso</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Blog</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">For business</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">CodingInterview.com</a></li>
+            </ul>
+          </div>
+          <div class="content-footer__column col">
+            <div class="content-footer__title">SCHOLARSHIPS</div>
+            <ul>
+              <li><a href="#">For Students</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">For Educators</a></li>
+            </ul>
+          </div>
+          <div class="content-footer__column col">
+            <div class="content-footer__title">CONTRIBUTE</div>
+            <ul>
+              <li><a href="#">Become an Author</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Become an Affiliate</a></li>
+            </ul>
+          </div>
+          <div class="content-footer__column col">
+            <div class="content-footer__title">LEGAL</div>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Business Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="content-footer__column col">
+            <div class="content-footer__title">MORE</div>
+            <ul>
+              <li><a href="#">Our Team</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Careers</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">For Bootcamps</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Blog for Business</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Quality Commitment</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row footer__bottom bottom-footer">
+          <div class="col-12">
+            <div class="bottom-footer__inner">
+              <div class="footer__socials">
+                <ul>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+              </div>
+              <div class="footer__copyright">
+                <p>Copyright ©2020. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery/jquery-1.11.2.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

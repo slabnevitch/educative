@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Урок</title>
+    <meta name="description" content="">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 header__inner">
+            <div class="header-logo"><a href="#">
+                <svg height="26px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="header-logo__img">
+                  <path d="M333 0H67A67 67 0 000 67v266a67 67 0 0067 67h266a67 67 0 0067-67V67a67 67 0 00-67-67zm29 325a37 37 0 01-37 37H75a37 37 0 01-37-37V162h324zm0-201H38V75a37 37 0 0137-37h250a37 37 0 0137 37z"></path>
+                  <rect x="68" y="63" width="38.1" height="38.1" rx="2.4"></rect>
+                  <rect x="126" y="63" width="38.1" height="38.1" rx="2.4"></rect>
+                  <rect x="184" y="63" width="38.1" height="38.1" rx="2.4"></rect>
+                  <rect x="200" y="295" width="114.3" height="38.1" rx="3.3"></rect>
+                  <path d="M109 331a3 3 0 005 0l61-68a3 3 0 001-4l-59-69a3 3 0 00-4-1l-20 17a3 3 0 00-1 5l40 47a3 3 0 010 4l-43 47a3 3 0 001 4z"></path>
+                </svg>
+                <svg height="16px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 862 141" class="header-logo__text d-none d-xss-inline">
+                  <path d="M90 62a44 44 0 00-17-17 49 49 0 00-24-6 49 49 0 00-25 7A46 46 0 006 64a53 53 0 00-6 26 53 53 0 006 26 45 45 0 0019 18q12 6 27 6a57 57 0 0022-4 39 39 0 0016-12l-12-14q-10 11-25 11-11 0-18-5a25 25 0 01-11-13l73-14q0-15-7-27zM21 89v-1q0-14 8-22t20-8a26 26 0 0126 20zm167-37a35 35 0 00-14-10 43 43 0 00-17-3 49 49 0 00-25 6 45 45 0 00-17 18q-6 12-6 27t6 26a45 45 0 0017 18 49 49 0 0025 6 44 44 0 0018-3c5-2 10-6 12-11v14h20V3h-19zm-4 54a27 27 0 01-10 11 29 29 0 01-29 0 27 27 0 01-10-11 34 34 0 01-4-16 34 34 0 014-17 27 27 0 0110-11 29 29 0 0129 0 27 27 0 0110 11 34 34 0 014 17 34 34 0 01-4 16zm112-16c0 13-4 17-8 22s-11 8-19 8q-11 0-17-7c-4-4-5-11-5-19V39h-19v58q0 21 11 32c7 8 13 11 26 11a41 41 0 0017-3 37 37 0 0014-10v13h20V39h-20zm88-32a26 26 0 0114 4 27 27 0 0110 10l16-10a38 38 0 00-15-17q-11-6-24-6a51 51 0 00-26 6 46 46 0 00-18 18 53 53 0 00-7 26 53 53 0 007 27 46 46 0 0018 18 52 52 0 0026 6 47 47 0 0023-6 39 39 0 0016-17l-16-10a27 27 0 01-10 10 26 26 0 01-14 3q-12 0-20-8t-8-23q0-14 8-22a27 27 0 0120-9zm201 63q-7 0-10-3a19 19 0 01-5-11V59h25V39h-24V20h-20v19h-15v20h15v48q0 17 8 25c6 6 13 8 23 8a41 41 0 0012-1 26 26 0 009-5l-6-17a19 19 0 01-12 4zm39-82h19v101h-19zm87 76l-29-76h-22l39 101h23l41-101h-22l-30 76zm107 6q-10 0-18-5a26 26 0 01-10-13l72-14q0-15-6-27a44 44 0 00-17-17 52 52 0 00-50 0 46 46 0 00-17 19c-4 7-8 16-8 26s4 18 8 26a46 46 0 0018 18q12 6 28 6a57 57 0 0022-4 39 39 0 0016-12l-12-14q-10 11-26 11zm-31-33q0-14 8-22t19-8a26 26 0 0127 20l-54 11zM624 0h19v19h-19zM513 47c-8-5-15-8-28-8-21 0-34 5-41 16l19 9c3-6 10-8 21-8l15 2c3 2 4 4 5 7v12h-5c-41 0-62 11-62 34a26 26 0 0011 21c6 6 15 8 25 8 13 0 23-3 32-9v9h19V76c0-14-4-24-11-29zm-8 64a30 30 0 01-11 9 37 37 0 01-16 3c-6 0-10-1-14-3a10 10 0 01-4-9c0-12 12-18 35-18h10z"></path>
+                </svg></a></div>
+            <ul class="header-menu">
+              <li class="d-none d-lg-flex"><a href="#">For Business</a></li>
+              <li class="d-none d-lg-flex"><a href="#">Pricing</a></li>
+              <li><a href="#">Log in</a></li>
+              <li class="header__join"><a href="#">Join for free<i class="fas fa-long-arrow-alt-right"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="lesson">
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="lesson__nav nav-lesson"><a href="#" class="nav-lesson__back"><i class="fas fa-arrow-left"></i>Back To Course Home</a><a href="#" class="nav-lesson__name">Docker for Developers</a>
+            <div class="nav-lesson__progress"> 
+              <div class="nav-lesson__progress-val">0% completed
+                <div class="nav-lesson__progress-length">
+                  <div style="width: 25%" class="nav-lesson__progress-completed"></div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-lesson__search"><i class="fas fa-search"></i>
+              <input type="text" placeholder="Search Curse">
+            </div>
+            <ul class="lesson__list list-lesson acordeon-list">
+              <li class="list-lesson__item acordeon-item acordeon-item-with-sublist"><a href="" class="list-lesson__title acordeon-link"><span>Before Getting Started</span>
+                  <div class="list-lesson__icon ripple-elem"><i class="fas fa-chevron-up"></i></div></a>
+                <ul class="acordeon-sublist list-lesson__content">
+                  <li class="acordeon-subitem once"><a href="#"><i class="far fa-circle"></i><i class="fas fa-circle"></i><span>Introduction</span></a></li>
+                </ul>
+              </li>
+              <li class="list-lesson__item acordeon-item acordeon-item-with-sublist"><a href="" class="list-lesson__title acordeon-link"><span>Why Docker?</span>
+                  <div class="list-lesson__icon ripple-elem"><i class="fas fa-chevron-up"></i></div></a>
+                <ul class="acordeon-sublist list-lesson__content">
+                  <li class="acordeon-subitem active"><a href="#"><i class="far fa-circle"></i><i class="fas fa-circle"></i><span>Solves Dependency Conflicts</span></a></li>
+                  <li class="acordeon-subitem completed"><a href="#"><i class="fas fa-circle"></i><span>Solves Dependency Conflicts</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="far fa-circle"></i><i class="fas fa-circle"></i><span>A DevOps Enabler Tool</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="far fa-circle"></i><i class="fas fa-circle"></i><span>Solves Dependency Conflicts</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="fas fa-lock"></i><span>Allows Easy Scaling Up</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="fas fa-lock"></i><span>Allows Seamless Upgrades</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="fas fa-lock"></i><span>International Commerce Already Uses Containers</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="fas fa-lock"></i><span>Quiz</span></a></li>
+                </ul>
+              </li>
+              <li class="list-lesson__item acordeon-item acordeon-item-with-sublist"><a href="" class="list-lesson__title acordeon-link"><span>Get Docker up and Running?</span>
+                  <div class="list-lesson__icon ripple-elem"><i class="fas fa-chevron-up"></i></div></a>
+                <ul class="acordeon-sublist list-lesson__content">
+                  <li class="acordeon-subitem active"><a href="#"><i class="far fa-circle"></i><i class="fas fa-circle"></i><span>Solves Dependency Conflicts</span></a></li>
+                  <li class="acordeon-subitem completed"><a href="#"><i class="fas fa-circle"></i><span>Solves Dependency Conflicts</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="far fa-circle"></i><i class="fas fa-circle"></i><span>Various Products for Various Needs</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="fas fa-lock"></i><span>Community on a Developer or CI Machine</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="fas fa-lock"></i><span>Enterprise on a Server</span></a></li>
+                </ul>
+              </li>
+              <li class="list-lesson__item acordeon-item acordeon-item-with-sublist"><a href="" class="list-lesson__title acordeon-link"><span>Basic Concepts</span>
+                  <div class="list-lesson__icon ripple-elem"><i class="fas fa-chevron-up"></i></div></a>
+                <ul class="acordeon-sublist list-lesson__content">
+                  <li class="acordeon-subitem active"><a href="#"><i class="far fa-circle"></i><i class="fas fa-circle"></i><span>Solves Dependency Conflicts</span></a></li>
+                  <li class="acordeon-subitem completed"><a href="#"><i class="fas fa-circle"></i><span>Solves Dependency Conflicts</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="far fa-circle"></i><i class="fas fa-circle"></i><span>Basic Concepts</span></a></li>
+                  <li class="acordeon-subitem"><a href="#"><i class="fas fa-lock"></i><span>Quiz</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="col lesson__content content-lesson">
+            <main class="lesson__main main-lesson">
+              <div class="main-lesson__inner">
+                <header>
+                  <h1>A DevOps Enabler Tool</h1>
+                  <p>In this lesson, you will learn how Docker containers ease deployment.</p>
+                </header>
+                <p>If you’re in a hurry, you can safely skip this chapter and head straight to the <a href="#">Get Docker up and Running</a> chapter. This <em>Why Docker?</em> chapter is there for those that want to know why containers should be used.</p>
+                <hr>
+                <figure><img src="img/6353227517788160.svg">
+                  <figcaption>A model of two web applications sharing the same dependencies</figcaption>
+                </figure>
+                <p>In DevOps, the Dev and Ops teams have conflicting goals:</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th><strong>
+                          <Dev>Team Seek</Dev></strong></th>
+                      <th><strong>
+                          <Ops>Team Seeks</Ops></strong></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Frequent deployments and updates</td>
+                      <td>Stability of production apps</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <Easy>creation of new resources</Easy>
+                      </td>
+                      <td>
+                        <Manage>infrastructure, not applications</Manage>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Monitoring and control</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>As an agile developer, I want to frequently publish my applications so that deployment becomes a routine. The rationale behind this is that this agility makes the “go-to production” event a normal, frequent, completely mastered event instead of a dreaded disaster that may awake monsters who hit me one week later. On the other hand, it is the Ops team that has to face the user if anything goes wrong in deployment - so they naturally want stability.</p>
+                <p>Containers make deployment easy. Deploying is as simple as running a new container, routing users to the new one, and trashing the old one. It can even be automated by <a href="">orchestration tools.</a> Since it’s so easy, we can afford to have many containers serving a single application for increased stability during updates.</p>
+                <p>If you don’t use containers, Ops need to handle your hosting environment: runtimes, libraries, and OS needed by your application. On the other hand, when using containers, they need one single methodology that can handle the containers you provide no matter what’s inside them. You may as well use .NET Core, Java, Node.JS, PHP, Python, or another development tool: it doesn’t matter to them as long as your code is containerized. This is a considerable advantage for containers when it comes to DevOps.</p>
+                <p>In the <a href="#">Docker with Common Development Profiles</a> chapter, we’ll see how to create container images for specific development technologies. However, your Ops don’t see how you create the images as they only see container images.</p>
+                <hr>
+                <p>In the next lesson, we will go over another advantage of Docker containers.</p>
+                <ul>
+                  <li>common build chain</li>
+                  <li>common image storage</li>
+                  <li>common way to deploy and scale-up</li>
+                  <li>common hosting of running containers</li>
+                  <li>common control and monitoring of running containers</li>
+                  <li>common ways to update running containers to a new version</li>
+                </ul>
+              </div>
+            </main>
+            <div class="quiz">
+              <div class="quiz__header">
+                <h1>Quiz</h1>
+                <p>In the following quiz, you will be tested on concepts you learned in this chapter.</p>
+              </div>
+              <div class="quiz__body">
+                <div class="quiz__item">
+                  <div class="quiz__question question-quiz">
+                    <div class="question-quiz__icon"><span>1</span><i class="fas fa-times"></i><i class="fas fa-check"></i><i class="fas fa-exclamation"></i></div>
+                    <div class="question-quiz__val">Which of the following is not a goal of the Ops team in DevOps?</div>
+                  </div>
+                  <div class="quiz__question question-quiz quiz__question--correct">
+                    <div class="question-quiz__icon"><span>1</span><i class="fas fa-times"></i><i class="fas fa-check"></i><i class="fas fa-exclamation"></i></div>
+                    <div class="question-quiz__val">Which of the following is not a goal of the Ops team in DevOps?</div>
+                  </div>
+                  <div class="quiz__question question-quiz quiz__question--incorrect">
+                    <div class="question-quiz__icon"><span>1</span><i class="fas fa-times"></i><i class="fas fa-check"></i><i class="fas fa-exclamation"></i></div>
+                    <div class="question-quiz__val">Which of the following is not a goal of the Ops team in DevOps?</div>
+                  </div>
+                  <div class="quiz__question question-quiz quiz__question--unanswered">
+                    <div class="question-quiz__icon"><span>1</span><i class="fas fa-times"></i><i class="fas fa-check"></i><i class="fas fa-exclamation"></i></div>
+                    <div class="question-quiz__val">Which of the following is not a goal of the Ops team in DevOps?</div>
+                  </div>
+                  <div class="quiz__answer answer-quiz quiz__answer--correct">
+                    <div class="answer-quiz__label">Correct Answer</div>
+                    <div class="answer-quiz__check"><i class="fas fa-check"></i><i class="fas fa-times"></i></div>
+                    <div class="answer-quiz__val"><strong>A) </strong>Reduces the time required to manage dependencies by grouping similiar applications on the same server</div>
+                  </div>
+                  <div class="quiz__answer answer-quiz quiz__answer--incorrect">
+                    <div class="answer-quiz__label">Your Answer</div>
+                    <div class="answer-quiz__check"><i class="fas fa-check"></i><i class="fas fa-times"></i></div>
+                    <div class="answer-quiz__val"><strong>A) </strong>Stability of production apps</div>
+                  </div>
+                  <div class="quiz__answer answer-quiz">
+                    <div class="answer-quiz__check"><i class="fas fa-check"></i><i class="fas fa-times"></i></div>
+                    <div class="answer-quiz__val"><strong>A) </strong>Stability of production apps</div>
+                  </div>
+                  <div class="quiz__answer answer-quiz checked">
+                    <div class="answer-quiz__check"><i class="fas fa-check"></i><i class="fas fa-times"></i></div>
+                    <div class="answer-quiz__val"><strong>A) </strong>Stability of production apps</div>
+                  </div>
+                </div>
+                <div class="quiz__item">
+                  <div class="quiz__question question-quiz">
+                    <div class="question-quiz__icon"><span>1</span><i class="fas fa-times"></i><i class="fas fa-check"></i><i class="fas fa-exclamation"></i></div>
+                    <div class="question-quiz__val">Which of the following is not a goal of the Ops team in DevOps?</div>
+                  </div>
+                  <div class="quiz__question question-quiz quiz__question--correct">
+                    <div class="question-quiz__icon"><span>1</span><i class="fas fa-times"></i><i class="fas fa-check"></i><i class="fas fa-exclamation"></i></div>
+                    <div class="question-quiz__val">Which of the following is not a goal of the Ops team in DevOps?</div>
+                  </div>
+                  <div class="quiz__question question-quiz quiz__question--incorrect">
+                    <div class="question-quiz__icon"><span>1</span><i class="fas fa-times"></i><i class="fas fa-check"></i><i class="fas fa-exclamation"></i></div>
+                    <div class="question-quiz__val">Which of the following is not a goal of the Ops team in DevOps?</div>
+                  </div>
+                  <div class="quiz__question question-quiz quiz__question--unanswered">
+                    <div class="question-quiz__icon"><span>1</span><i class="fas fa-times"></i><i class="fas fa-check"></i><i class="fas fa-exclamation"></i></div>
+                    <div class="question-quiz__val">Which of the following is not a goal of the Ops team in DevOps?</div>
+                  </div>
+                  <div class="quiz__answer answer-quiz quiz__answer--correct">
+                    <div class="answer-quiz__label">Correct Answer</div>
+                    <div class="answer-quiz__check"><i class="fas fa-check"></i><i class="fas fa-times"></i></div>
+                    <div class="answer-quiz__val"><strong>A) </strong>Reduces the time required to manage dependencies by grouping similiar applications on the same server</div>
+                  </div>
+                  <div class="quiz__answer answer-quiz quiz__answer--incorrect">
+                    <div class="answer-quiz__label">Your Answer</div>
+                    <div class="answer-quiz__check"><i class="fas fa-check"></i><i class="fas fa-times"></i></div>
+                    <div class="answer-quiz__val"><strong>A) </strong>Stability of production apps</div>
+                  </div>
+                  <div class="quiz__answer answer-quiz">
+                    <div class="answer-quiz__check"><i class="fas fa-check"></i><i class="fas fa-times"></i></div>
+                    <div class="answer-quiz__val"><strong>A) </strong>Stability of production apps</div>
+                  </div>
+                  <div class="quiz__answer answer-quiz checked">
+                    <div class="answer-quiz__check"><i class="fas fa-check"></i><i class="fas fa-times"></i></div>
+                    <div class="answer-quiz__val"><strong>A) </strong>Stability of production apps</div>
+                  </div>
+                </div>
+                <div class="quiz__summary summary-quiz">
+                  <div class="summary-quiz__content">
+                    <div class="summary-quiz__title"> <span>SUMMARY</span></div>
+                    <div class="correct summary-quiz__mark"><span>Correct</span><span>0</span></div>
+                    <div class="incorrect summary-quiz__mark"><span>Incorrect</span><span>1</span></div>
+                    <div class="unanswered summary-quiz__mark"><span>Unanswered</span><span>2</span></div>
+                  </div>
+                </div>
+                <div class="quiz__footer footer-quiz">
+                  <div class="footer-quiz__img">
+                    <svg width="563px" height="649px" viewBox="0 0 563 649" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <lineargradient id="linearGradient-1" x1="49.9984331%" y1="100%" x2="49.9984331%" y2="0%">
+                          <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+                          <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+                          <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-2" x1="50.0015746%" y1="100%" x2="50.0015746%" y2="0%">
+                          <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+                          <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+                          <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+                        </lineargradient>
+                        <lineargradient id="linearGradient-3" x1="49.9973135%" y1="99.9724087%" x2="49.9973135%" y2="-0.00753905464%">
+                          <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+                          <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+                          <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+                        </lineargradient>
+                      </defs>
+                      <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Artboard-2" transform="translate(-639.000000, -1319.000000)">
+                          <g id="undraw_checklist_7q37-copy" transform="translate(628.000000, 1256.000000)">
+                            <g id="Group-4" transform="translate(253.000000, 63.000000)">
+                              <polygon fill="url(#linearGradient-1)" fill-rule="nonzero" points="320.02 0.89 0.91 91.73 0.91 186.09 320.02 117.66"></polygon>
+                              <polygon fill="#FFFFFF" fill-rule="nonzero" points="311.33 4.42 7.96 92.61 7.96 180.8 311.33 110.25"></polygon>
+                              <path d="M57.34,124.2 C57.34,137.31 50.99,149.49 43.23,151.39 C35.47,153.29 29.39,144.39 29.39,131.5 C29.39,118.61 35.55,106.5 43.23,104.38 C50.91,102.26 57.34,111.09 57.34,124.2 Z" stroke="#DBDBDB" stroke-width="2"></path>
+                              <polygon fill="#DBDBDB" fill-rule="nonzero" points="276.06 64.39 83.36 115.08 83.36 104.26 276.06 52.14"></polygon>
+                              <polygon fill="#DBDBDB" fill-rule="nonzero" points="276.06 89.08 83.36 139.77 83.36 128.95 276.06 76.84"></polygon>
+                            </g>
+                            <g id="Group-4-Copy" transform="translate(250.000000, 280.000000)">
+                              <polygon fill="url(#linearGradient-1)" fill-rule="nonzero" points="321 25 0 91.7228942 0 187 321 150 321 0"></polygon>
+                              <polygon fill="#FFFFFF" fill-rule="nonzero" points="312 36 7 92 7 181 312 135 312 3"></polygon>
+                              <path d="M56,124.735193 C56,138.236538 49.6386404,150.780122 41.8647585,152.736838 C34.0908766,154.693555 28,145.527882 28,132.253105 C28,118.978327 34.1710197,106.506833 41.8647585,104.323549 C49.5584973,102.140265 56,111.233848 56,124.735193 Z" stroke="#DBDBDB" stroke-width="2"></path>
+                              <polygon fill="#DBDBDB" fill-rule="nonzero" points="277 80 83 116 83 104.997776 277 64.4563076"></polygon>
+                              <polygon fill="#DBDBDB" fill-rule="nonzero" points="277 109 83 141 83 129.996027 277 89.448117"></polygon>
+                            </g>
+                            <polygon fill="url(#linearGradient-2)" fill-rule="nonzero" points="566.16 590.64 252.14 586.95 252.14 682.63 569.69 712"></polygon>
+                            <polygon fill="#FFFFFF" fill-rule="nonzero" points="260.96 593.03 260.96 635 260.96 677.7 564.33 702.39 564.33 596.56"></polygon>
+                            <path d="M313.87,639.64 C313.87,652.72 307.52,662.88 299.76,662.34 C292,661.8 285.93,651 285.93,638.16 C285.93,625.32 292.09,615.16 299.77,615.45 C307.45,615.74 313.87,626.56 313.87,639.64 Z" stroke="#DBDBDB" stroke-width="2"></path>
+                            <polygon fill="#DBDBDB" fill-rule="nonzero" points="529.06 642.42 342.63 633.49 342.63 622.45 529.06 629.98"></polygon>
+                            <polygon fill="#DBDBDB" fill-rule="nonzero" points="529.06 667.11 342.63 658.18 342.63 647.14 529.06 654.67"></polygon>
+                            <g id="BOY" transform="translate(82.500000, 533.000000) rotate(3.000000) translate(-82.500000, -533.000000) translate(9.000000, 375.000000)">
+                              <path d="M114,289 L104.42,234.55 C104.42,234.55 104.42,216.05 100.11,203.84 C102.78,202.15 104.45,201 104.45,201 C95.23,192.61 95.23,161.86 95.23,161.86 C95.23,161.86 93.4866667,152.573333 90,134 L103.413018,150.569022 C105.745182,153.449931 108.92404,155.524738 112.5,156.5 L115.81572,157.404279 C117.310702,157.812001 118.910241,157.503527 120.146388,156.569101 C122.143136,155.059722 122.761006,153.870021 122,153 C121.431686,152.350274 118.765019,149.283607 114,143.8 C114,143.8 112.613958,141.53801 104.45,138 C85.99,130 87,113 87,113 C80.0324002,104.448868 76.6157335,99.2955345 76.75,97.54 C76.8152669,96.6866351 69.81,86.87 69,86 L59,72 L51,55 L53,51 C51.46,42.67 56.49,24.96 48.3,21.54 L41,13 C37.92,16.46 30,16.46 24.64,18 C19.28,19.54 9.93831799,37.7562416 10,49 C10.0561974,59.243998 19,67 24.64,70.57 C27.1611813,72.1658541 28.9478479,73.6425208 30,75 C30.39,75 40.09,74.1 39.86,77 C33.71,77 30.64,108.72 39.86,114.31 L37.93,143.8 L39.86,161.86 C46.01,175.86 55.24,175.85 55.24,175.85 L64.45,215 C67.37,216.33 71.17,216.23 75.25,215.31 L76.74,226.18 C76.74,226.18 49.07,245.75 49.07,273.71 L48.07,275.54 L46,273.71 L30,284.56 L55.24,315.71 L76.75,315.71 C82.9,301.71 58.3,298.93 58.3,298.93 L58.18,284.56 L83.11,257.64 C87.34,268.89 94.88,287.59 101.11,295.64 L98.3,296.15 L100.11,315.71 L141,315.71 C151.246667,302.596667 142.246667,293.693333 114,289 Z" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+                              <path d="M44.26,63.43 C44.26,63.43 42,88 44.26,92.71 L62.56,81.71 L50.36,58.53 L44.26,63.43 Z" fill="#FDA57D" fill-rule="nonzero"></path>
+                              <path d="M111.74,289.56 L95.58,222.22 L79.45,243.76 C79.45,243.76 92.92,286.86 101,292.24 L111.74,289.56 Z" fill="#FBA47D" fill-rule="nonzero"></path>
+                              <path d="M41.71,71.37 C55.0973823,71.37 65.95,60.5173823 65.95,47.13 C65.95,33.7426177 55.0973823,22.89 41.71,22.89 C32.7774601,22.89 24.9734063,27.7216237 20.7687044,34.9140054 C18.6717327,38.5009949 17.47,42.6751576 17.47,47.13 C17.47,60.5173823 28.3226177,71.37 41.71,71.37 Z" fill="#FDA57D" fill-rule="nonzero"></path>
+                              <path d="M74.03,202.67 L76.72,224.22 C76.72,224.22 52.45,243.07 52.45,270 L49.76,275.39 L57.84,283.47 L100.94,232.29 C100.94,232.29 100.94,202.66 92.86,194.58 L74.03,202.67 Z" fill="#FDA57D" fill-rule="nonzero"></path>
+                              <path id="Shape-Copy" d="M99.3111269,88.2893791 L94.2661494,130.509614 L90.1863595,167.823891 L77.6979232,162.920937 L86.6836701,126.571847 L91.5066049,88.5884386 C89.2272379,85.3180006 88.8012776,81.3656934 90.228724,76.7315171 L90.2287085,76.7315123 C90.8834418,74.6059336 93.1373301,73.4135778 95.2629089,74.0683111 C95.7021629,74.2036128 96.1150136,74.4131103 96.4835734,74.687727 L97.4271386,75.3907633 C101.509242,78.4323687 102.352732,84.2072757 99.3111269,88.2893791 C99.3111269,88.2893791 99.3111269,88.2893791 99.3111269,88.2893791 Z" fill="#FDA57D" fill-rule="nonzero" transform="translate(89.417894, 120.856343) rotate(132.000000) translate(-89.417894, -120.856343) "></path>
+                              <path d="M61.45,280.41 L61.56,294.25 C61.56,294.25 83.11,296.94 77.72,310.41 L56.18,310.41 L34.63,283.47 L50.79,270 L61.45,280.41 Z" fill="#4B49FF" fill-rule="nonzero"></path>
+                              <path d="M111.05,286.86 L121.82,294.94 C121.82,294.94 156.82,292.25 143.37,311.1 L97.58,311.1 L97.58,289.56 L111.05,286.86 Z" fill="#4B49FF" fill-rule="nonzero"></path>
+                              <path d="M100.97,198 C100.97,198 76.73,216.86 65.97,211.47 L57.89,173.76 C56.6487469,172.725366 55.4074939,171.690733 54.1662408,170.656099 L54.1662408,170.656099 C46.2860567,164.087654 41.73,154.358742 41.73,144.1 L92.91,160.26 C92.91,160.26 92.89,189.89 100.97,198 Z" fill="#7ED321" fill-rule="nonzero"></path>
+                              <path d="M41.74,79 C36.35,79 35.74,93 41.74,114 C43.4723484,131.72503 42.8923484,144.058364 40,151 C45,155 56,158 70,161 C79.0429483,162.937775 88.0858966,162.372236 97.1288449,159.303383 L97.1288416,159.303373 C97.6223326,159.1359 97.9044754,158.617511 97.77718,158.112163 C89.0612762,123.511047 79.3622162,99.9769924 68.68,87.51 C65.9297755,82.4336504 63.7031088,79.5969837 62,79 C52.464392,75.6575226 44.5740653,79 41.74,79 Z" fill="#4B49FF" fill-rule="nonzero"></path>
+                              <path d="M95.3311118,112.76263 L89.4689753,157.064271 L70.482903,185.557381 L57.012903,177.477381 L75.872903,147.847381 L86.1883286,111.5754 C85.5945764,106.404257 86.5526938,101.820435 89.0626807,97.8239349 L89.0627145,97.8239561 C90.1749686,96.0529814 92.5122873,95.5189827 94.2832621,96.6312367 C95.4677815,97.3751697 96.1457109,98.7115128 96.0463915,100.10674 C96.0463915,100.10674 96.0463915,100.10674 96.0463915,100.10674 C95.8492113,102.876702 99.863995,107.335571 95.3311118,112.76263 Z" fill="#FDA57D" fill-rule="nonzero" transform="translate(77.255853, 140.804076) rotate(132.000000) translate(-77.255853, -140.804076) "></path>
+                              <g id="Group-5" transform="translate(33.919942, 36.689137) rotate(36.000000) translate(-33.919942, -36.689137) translate(14.419942, 6.189137)" fill="#111427">
+                                <path d="M26.7654124,29.1555065 C28.0915291,29.1982902 28.7545875,28.6328366 28.7545875,27.4591459 C28.7545875,23.637256 31.1054216,1.69005361 18.4708978,6.43875174 C-4.87298116,15.2004342 -4.8342843,49.5018956 18.4708978,58.3495706 C19.8257976,58.8951796 22.7428463,59.6583652 27.2220438,60.6391274 L27.2220404,60.639143 C29.9443362,61.2352152 32.634405,59.5115702 33.2304772,56.7892744 C33.4644152,55.7208657 33.3448791,54.6053721 32.8898713,53.6107908 L29.6983683,46.6346261 C29.1233609,45.377743 27.8681524,44.5716577 26.4859843,44.5716577 L26.4859843,44.5716577 C25.147917,44.5716577 23.9767353,43.6727768 23.630698,42.3802281 L21.7742752,35.4459553 C21.0601439,32.7784701 22.6436502,30.0371283 25.3111355,29.3229971 C25.785052,29.1961215 26.2750615,29.1396867 26.7654124,29.1555065 Z" fill-rule="nonzero"></path>
+                                <path id="Oval-3" d="M35.4722222,20 C42.2223692,20 35.4722222,19.2942991 35.4722222,11.0100278 C35.4722222,2.72575659 31.0277778,-2.87886105 25.4722222,1.56558339 C21.7685185,4.52854635 21.0277778,8.60262043 23.25,13.7878056 C26.8980502,17.9292685 30.9721243,20 35.4722222,20 Z"></path>
+                              </g>
+                            </g>
+                            <text id="-" transform="translate(91.996771, 144.306268) rotate(24.000000) translate(-91.996771, -144.306268) " font-size="34" font-weight="900" fill="#F5A623">
+                              <tspan x="64.9967708" y="155.306268">-</tspan>
+                            </text>
+                            <text id="--copy" transform="translate(326.248652, 482.418592) rotate(-18.000000) translate(-326.248652, -482.418592) " font-size="34" font-weight="900" fill="#F5A623">
+                              <tspan x="305.070877" y="493.418592">-</tspan>
+                            </text>
+                            <text id="--copy-2" transform="translate(333.248652, 91.418592) rotate(-18.000000) translate(-333.248652, -91.418592) " font-size="34" font-weight="900" fill="#F5A623">
+                              <tspan x="312.070877" y="102.418592">-</tspan>
+                            </text>
+                            <circle id="Oval-4-Copy-5" fill="#D8D8D8" cx="149.5" cy="284.5" r="3.5"></circle>
+                            <circle id="Oval-4-Copy-8" fill="#D8D8D8" cx="191.5" cy="611.5" r="3.5"></circle>
+                            <circle id="Oval-4-Copy-6" fill="#D8D8D8" cx="203.5" cy="156.5" r="8.5"></circle>
+                            <circle id="Oval-4-Copy-7" fill="#D8D8D8" cx="17.5" cy="274.5" r="6.5"></circle>
+                            <text id="-" transform="translate(300.248652, 308.418592) rotate(15.000000) translate(-300.248652, -308.418592) " font-size="34" font-weight="900" fill="#F5A623">
+                              <tspan x="279.070877" y="319.418592">-</tspan>
+                            </text>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="footer-quiz__message">Seems like you skipped few questions. Would you like to try again?</div>
+                  <div class="footer-quiz__bottom">
+                    <button class="button empty">Retake Quiz</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lesson__pagination pagination-lesson">
+              <div class="pagination-lesson__prev">
+                <div class="pagination-lesson__arrow button empty"><i class="fas fa-arrow-left"></i><span>Back</span></div>
+                <p>International Commerce Already Uses Containers</p>
+              </div>
+              <div class="pagination-lesson__next">
+                <div class="pagination-lesson__arrow button empty"><span>Next</span><i class="fas fa-arrow-right"></i></div>
+                <p>Various Products for Various Needs</p>
+              </div>
+            </div>
+            <div class="lesson__login"><a href="">Login</a> to save progress
+              <div class="lesson__mark">
+                <label>
+                  <input type="checkbox" checked><span class="fake-check"></span><span>Mark as Completed</span>
+                </label>
+              </div>
+            </div>
+            <div class="nav-lesson__progress lesson-progress"> 
+              <div class="lesson-progress__left">
+                <div class="nav-lesson__progress-val">0% completed, meet the <span>criteria</span> and claim your course certificate!
+                  <div class="nav-lesson__progress-length">
+                    <div style="width: 25%" class="nav-lesson__progress-completed"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="lesson-progress__lock"><i class="fas fa-lock"></i></div>
+            </div>
+            <div class="lesson__footer footer-lesson"><a href="#"><i class="fas fa-exclamation-circle"></i><span>Report an Issue</span></a><a href="#"><i class="fas fa-question-circle"></i><span>Ask a Question</span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cookie-alert">
+      <p>We use cookies to ensure you get the best experience on our website. Please review our <a href="">Privacy Policy</a> to learn more</p>
+      <button class="button empty">Accept</button>
+    </div>
+    <script src="js/jquery/jquery-1.11.2.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
